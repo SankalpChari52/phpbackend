@@ -24,10 +24,10 @@ class API{
     public function returnResponse($code, $data) {
         header("content-type: application/json");
         if(in_array($code, [SUCCESS_RESPONSE,EMPTY_RESPONSE])){
-            $response['has_error'] = 1;
+            $response['has_error'] = 0;
             $response['data'] = $data; 
         }else{
-            $response['has_error'] = 0;
+            $response['has_error'] = 1;
             $response['errors'] = $data; 
         }
         
