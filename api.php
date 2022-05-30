@@ -1,10 +1,12 @@
 <?php 
 class API{
+    // keys
+    private $CLIENT_SECRET    = 'beff4a8e9ceaf82248f9d16fbb330d8aa583018b';
+    private $CLIENT_KEY       = 'edb7301fe6a5afe67aec9931ed6cc59d6a349d14';
+    
     protected $method;
     protected $path;
     protected $request_data;
-    protected $CLIENT_SECRET    = 'beff4a8e9ceaf82248f9d16fbb330d8aa583018b';
-    protected $CLIENT_KEY       = 'edb7301fe6a5afe67aec9931ed6cc59d6a349d14';
     protected $AUD_VALUE        = 'https://loadapp.iformbuilder.com/exzact/api/oauth/token';
     protected $PROFILE_ID       = '372151';
     protected $PAGE_ID          = '290839219';
