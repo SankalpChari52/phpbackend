@@ -46,7 +46,7 @@ class Form extends API{
               \"fields\":[
                 {\"element_name\": \"name\",\"value\": \"".$this->request_data["name"]."\"},
                 {\"element_name\": \"email\",\"value\": \"".$this->request_data["email"]."\"},
-                {\"element_name\": \"dob\",\"value\": \"".$this->request_data["dob"]."\"},
+                {\"element_name\": \"dob\",\"value\": \"". $this->request_data["dob"]."\"},
                 { \"element_name\": \"city\", \"value\": \"".$this->request_data["city"]."\" },
                 { \"element_name\": \"pincode\", \"value\": \"".$this->request_data["pin"]."\"}
               ]
