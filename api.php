@@ -3,7 +3,7 @@ class API{
     // keys
     private $CLIENT_SECRET    = 'beff4a8e9ceaf82248f9d16fbb330d8aa583018b';
     private $CLIENT_KEY       = 'edb7301fe6a5afe67aec9931ed6cc59d6a349d14';
-    
+
     protected $method;
     protected $path;
     protected $request_data;
@@ -23,7 +23,7 @@ class API{
     // return function 
     public function returnResponse($code, $data) {
         header("content-type: application/json");
-        if(!in_array($code, [SUCCESS_RESPONSE,EMPTY_RESPONSE])){
+        if(in_array($code, [SUCCESS_RESPONSE,EMPTY_RESPONSE])){
             $response['has_error'] = 1;
             $response['data'] = $data; 
         }else{
